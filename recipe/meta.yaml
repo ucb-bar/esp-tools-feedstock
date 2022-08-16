@@ -64,7 +64,7 @@ requirements:
 
 test:
   commands:
-    - test "$($PREFIX/riscv/bin/riscv64-unknown-elf-gcc -dumpversion)" = "$PKG_VERSION"
+    - test "$($PREFIX/esp-tools/bin/riscv64-unknown-elf-gcc -dumpversion)" = "$PKG_VERSION"
 
 about:
   home: https://github.com/ucb-bar/ucb-bar-esp-tools

@@ -90,9 +90,9 @@ fi
 
 _ucbbaresptools_activation \
   @NATURE@ \
-  "esp,${CONDA_PREFIX}/esp" \
-  "PATH,${CONDA_PREFIX}/esp/bin:${PATH}" \
-  "LD_LIBRARY_PATH,${CONDA_PREFIX}/esp/lib:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
+  "RISCV,${CONDA_PREFIX}/esp-tools" \
+  "PATH,${CONDA_PREFIX}/esp-tools/bin:${PATH}" \
+  "LD_LIBRARY_PATH,${CONDA_PREFIX}/esp-tools/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}"
 
 
 if [ $? -ne 0 ]; then
