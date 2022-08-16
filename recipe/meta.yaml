@@ -9,7 +9,7 @@ package:
 source:
   - folder: src
     git_url: https://github.com/ucb-bar/ucb-bar-esp-tools.git
-    git_rev: 336e7e41c6f941aee579be6908be9240ca0b2610
+    git_rev: 4562650125c4889624bc56504c1816e61f6eaa35
 
 build:
   number: {{ build_number }}
