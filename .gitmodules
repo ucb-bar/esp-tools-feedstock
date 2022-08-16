@@ -1,0 +1,18 @@
+[submodule "riscv-gnu-toolchain"]
+	path = riscv-gnu-toolchain
+	url = https://github.com/ucb-bar/esp-gnu-toolchain.git
+[submodule "riscv-isa-sim"]
+	path = riscv-isa-sim
+	url = https://github.com/ucb-bar/esp-isa-sim.git
+[submodule "riscv-pk"]
+	path = riscv-pk
+	url = https://github.com/riscv-software-src/riscv-pk.git
+[submodule "riscv-tests"]
+	path = riscv-tests
+	url = https://github.com/ucb-bar/esp-tests.git
+[submodule "libgloss"]
+	path = libgloss
+	url = https://github.com/ucb-bar/libgloss-htif.git
+[submodule "qemu"]
+	path = qemu
+	url = https://github.com/qemu/qemu.git
