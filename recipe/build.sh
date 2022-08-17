@@ -2,9 +2,11 @@
 
 set -ex
 
+export LDFLAGS="$LDFLAGS -s"
+
 git -C ./src/riscv-gnu-toolchain submodule deinit --force qemu
 
-NPROC=$CPU_COUNT ./src/build-toolchains.sh --prefix $PREFIX/esp-tools
+NPROC=$CPU_COUNT ./src/build-toolchains.sh --prefix $PREFIX/esp-tools --clean-after-install
 
 # create activate & deactivate scripts that manage the toolchain
 mkdir -p "${PREFIX}"/etc/conda/{de,}activate.d
