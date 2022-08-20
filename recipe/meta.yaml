@@ -41,20 +41,20 @@ requirements:
     - flex
     - libtool
     - zlib
-  host:
+    #- host:
     - expat
     - ncurses
     - gmp
     - mpfr
     - mpc
-    - zlib
+    #- zlib
 
 test:
   commands:
     - test "$($PREFIX/esp-tools/bin/riscv64-unknown-elf-gcc -dumpversion)" = "9.2.0"
 
 about:
-  home: https://github.com/ucb-bar/ucb-bar-esp-tools
+  home: https://github.com/ucb-bar/esp-tools-feedstock
   summary: RISC-V toolchain for Hwacha/Gemmini UC Berkeley projects
 
 extra:
