@@ -18,6 +18,15 @@ build:
     - '*'
   # needed to avoid unable to find specs files errors
   detect_binary_files_with_prefix: False
+  # list out areas where conda can use patchelf (ignore the sysroot)
+  binary_relocation:
+    - 'esp-tools/bin/**'
+    - 'esp-tools/include/**'
+    - 'esp-tools/lib/**'
+    - 'esp-tools/libexec/**'
+    - 'esp-tools/riscv64-unknown-elf/**'
+    - 'esp-tools/riscv64-unknown-linux-gnu/**'
+    - 'esp-tools/share/**'
 
 requirements:
   build:
@@ -48,6 +57,7 @@ requirements:
     - mpfr
     - mpc
     #- zlib
+    - file
 
 test:
   commands:
