@@ -1,7 +1,7 @@
 About esp-tools
 ===============
 
-Home: https://github.com/ucb-bar/ucb-bar-esp-tools
+Home: https://github.com/ucb-bar/esp-tools-feedstock
 
 Package license: 
 
